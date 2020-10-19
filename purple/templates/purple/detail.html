@@ -1,0 +1,92 @@
+{% extends 'purple/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+        
+        <div class="container" style="background-color: lightblue">
+            <div class="row">
+                <div class="col-6">
+                    <a class="nav-link fas fa-home" href="#"> Dashboard</a>
+                </div>
+                <div class="col-6" style="text-align: end;">
+                    <a class="nav-link fas fa-info-circle mr-5" href="#"> Overview</a>
+                </div>
+            </div>
+            <div class="row" >
+                
+                <div class="col-md-4">
+                    <div class="card text-white text-start p-3" style="background-color: lightcoral;">
+                        <blockquote class="blockquote ml-3">
+                            <div class="row">
+                                <h5 class="col-8">Weekly Sales</h5>
+                                <a class=" col-4 fas fa-chart-line" href=""></a>
+                            </div>
+                        </blockquote>
+                            <h3>$ 15,0000</h3>
+                            <br>
+                            <p>Increased by 60%</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card text-white text-start p-3" style="background-color: lightskyblue;">
+                        <blockquote class="blockquote ml-3">
+                            <div class="row">
+                                <h5 class="col-8">Weekly Orderss</h5>
+                                <a class=" col-4 far fa-bookmark" href=""></a>
+                            </div>
+                        </blockquote>
+                        <h3>$ 15,0000</h3>
+                        <br>
+                        <p>Increased by 60%</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card text-white text-start p-3" style="background-color: lightgreen;">
+                        <blockquote class="blockquote ml-3">
+                            <div class="row">
+                                <h5 class="col-8">Weekly Orders</h5>
+                                <a class=" col-4 fas fa-gem" href=""></a>
+                            </div>
+                            <h2 class="">45,6334</h3>
+                            <br>
+                            <h6>Decreased by 10%</h6>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 ">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-7 mb-3" style="height: 250; width: 350;">
+                            <div id="myDIV" class="card" style="height:270px; width:370px; background-color:lightblue;"></div>
+                        </div>
+                        <div class="col-5">
+                            <h3>Change Colour</h3>
+                            <button onclick="myFunction('red')" class="row mb-4 ml-5 mt-5" style="height: 30px; width: 30px; text-align: center; background-color: red;"></button>
+                            <button onclick="myFunction('blue')" class="row mb-4 ml-5" style="height: 30px; width: 30px; background-color: blue;"></button>
+                            <button onclick="myFunction('green')" class="row ml-5" style="height: 30px; width: 30px; background-color: green;"></button>
+                        </div>
+                    </div>     
+                </div>
+                <div class="col-4">
+                    <img src="https://docs.devexpress.com/MobileControls/images/android/overview-chart-elements.png" alt="pichart" style=" height:250px; text-align:center ; width:349px">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(color) {
+                document.getElementById("myDIV").style.backgroundColor = color;
+            }
+        </script>
+            
+    {% endblock %}
+</body>
+</html>
+
